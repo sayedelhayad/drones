@@ -8,6 +8,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class OrderRequest {
     @NonNull
     private List<MedicationRequest> medications;

@@ -2,10 +2,7 @@ package com.test.drones.model.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 @Getter
@@ -20,6 +17,6 @@ public class OrderEntity extends BaseEntity {
     @ManyToOne
     private DroneEntity drone;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<MedicationEntity> medications;
 }

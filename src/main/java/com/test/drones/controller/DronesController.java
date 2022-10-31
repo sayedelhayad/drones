@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/drones")
-class DronesController {
+public class DronesController {
 
     @Autowired
     private DronesService dronesService;

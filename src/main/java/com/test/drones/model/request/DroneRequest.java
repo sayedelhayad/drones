@@ -11,6 +11,7 @@ import javax.validation.constraints.Size;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class DroneRequest {
     @NotBlank
     @Size(max = 100)
